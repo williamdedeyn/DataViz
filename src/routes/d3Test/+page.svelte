@@ -1,15 +1,17 @@
 <script>
   import * as d3 from 'd3';
 
-  const width = 800;
-  const height = 600;
+  const width = 1200;
+  const height = 1000;
 
   let europeData;
+  let locations;
 
   // Load GeoJSON data asynchronously
   async function loadData() {
     europeData = await d3.json('europe.geojson');
     renderMap();
+    locations = await d3.csv('locations.csv');
   }
 
   function renderMap() {
