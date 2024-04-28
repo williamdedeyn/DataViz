@@ -6,16 +6,17 @@
 
   let europeData;
   let locations;
+  let svg;
 
   // Load GeoJSON data asynchronously
   async function loadData() {
-    europeData = await d3.json('europe.geojson');
+    europeData = await d3.json('europe_copy.geojson');
     renderMap();
     locations = await d3.csv('locations.csv');
   }
 
   function renderMap() {
-    const svg = d3.select('svg')
+    svg = d3.select('svg')
                  .attr('width', width)
                  .attr('height', height);
 
@@ -29,10 +30,11 @@
        .enter()
        .append('path')
        .attr('d', path)
-       .attr('fill', 'lightblue')
-       .attr('stroke', 'black');
+       .attr('fill', 'white')
+       .attr('stroke', 'black')
+       .on('click', function(event, d) {
+          d3.select(this).attr('fill', 'lightgrey')});
   }
-
   loadData();
 </script>
 
@@ -40,6 +42,9 @@
   svg {
     width: 100%;
     height: auto;
+    background-color: lightblue;
+    margin-top: 50px;
+    margin-left:20px;
   }
 </style>
 
