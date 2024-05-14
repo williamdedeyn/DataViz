@@ -1,14 +1,9 @@
-index,type,latitude,longitude
-0,Vendor,51.2211097,4.3997081
-1,Vendor,51.1089776,17.0326689
-2,Vendor,45.7578137,4.8320114
-4,Vendor,51.5142273,7.4652789
-5,Vendor,52.4082663,16.9335199
-9,Production,51.2747978,4.3327002
-10,Production,51.1193195,16.997162
-11,Production,45.7520662,4.7675045
-12,Distribution Center,51.2747978,4.3327002
-13,Distribution Center,51.1193195,16.997162
-14,Distribution Center,45.7520662,4.7675045
-15,Distribution Center,52.4285109,-1.8975181
-16,Distribution Center,57.7225561,11.8588688
+,key,type,latitude,longitude,country
+5,1,Production,51.2747978,4.3327002,Belgium
+6,2,Production,51.1193195,16.997162,Poland
+7,3,Production,45.7520662,4.7675045,France
+8,4,Distribution Center,51.2747978,4.3327002,Belgium
+9,5,Distribution Center,51.1193195,16.997162,Poland
+10,6,Distribution Center,45.7520662,4.7675045,France
+11,7,Distribution Center,52.4285109,-1.8975181,United Kingdom
+12,8,Distribution Center,57.7225561,11.8588688,Sweden
