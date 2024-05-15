@@ -93,7 +93,7 @@
   function clickHandler(inventoryData, plantKey) {
     console.log('Clicked on plant', plantKey);
     selectedPlantCountry = locations.filter(p => parseInt(p.key) == plantKey)[0].country;
-    document.getElementById("country_name").innerHTML = selectedPlantCountry;
+    document.getElementById("country_name").innerHTML = 'Country: ' + selectedPlantCountry + ' ' + 'Plant Key: ' + plantKey;
   
 
     shelf_inverntory_points = inventoryData.filter(p => parseInt(p.PlantKey) == plantKey).map(p => 

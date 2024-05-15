@@ -1,4 +1,4 @@
-<h1>Example svelte project</h1>
+<h1>Data Visualization Project Implementation 2</h1>
 
 Check out the:
 <ul>
